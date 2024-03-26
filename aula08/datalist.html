@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Datalist</title>
+</head>
+<body>
+
+  <h1>DataList</h1>
+
+  <!-- o datalista serve para autocompletar para quando o usuário estiver digitando já aparecer a sugestão.
+  
+  o list precisa ser obrigatoriamente denominado igual ao id de datalist para ser possível relacionar.
+
+  placeholder deixa uma mensagem de exemplo dentro da caixa para o usuário.
+
+  autocomplete é para selecionar as sugestões conforme o usuário digita.-->
+
+  <input type="text" list="unidadeIos" autocomplete="on" placeholder="Unidades">
+
+  <!-- id igual o list do input -->
+  <datalist id="unidadeIos">
+    <option value="Santana"></option>
+    <option value="Santo Amaro"></option>
+    <option value="São Mateus"></option>
+    <option value="Santos"></option>
+  </datalist>
+</body>
+</html>

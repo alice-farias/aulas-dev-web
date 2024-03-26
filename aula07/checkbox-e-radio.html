@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checkbox e Radio</title>
+</head>
+
+<body>
+
+  <header>
+    <h1>Cadastro Aluno</h1>
+  </header>
+
+  <main>
+    <form action="#">
+
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" name="nome">
+
+      <br> <br>
+
+      <label for="emailUsuario">E-mail: </label>
+      <input type="email" id="emailUsuario" name="email">
+
+      <br> <br>
+
+      <label for="idade">Idade: </label>
+      <input type="number" id="idade" name="idade">
+
+      <!-- alt + shift + seta pra baixo = copia a linha -->
+
+      <br> <br>
+
+      <h3>OPÇÃO DE CURSO</h3>
+
+      <!-- neste caso, o label é colocado após o input para experiência do usuário.  -->
+
+      <input type="radio" name="curso" id="c1" value="dev">
+      <label for="curso">Desenvolvimento Web</label>
+
+      <br>
+      <!-- value é o "nome" que aparece no banco de dados
+            id só existe 1. 
+            nome é um tipo de classe dentro de um banco de dados.-->
+
+      <input type="radio" name="curso" id="c2" value="zendesk">
+      <label for="curso"> Zendesk Office</label>
+
+      <br>
+
+      <input type="radio" name="curso" id="c3" value="cloud">
+      <label for="curso">Cloud</label>
+
+      <br>
+
+      <h3>Horários</h3>
+
+      <!-- dentro do checkbox, os "names" precisam ser diferentes-->
+
+      <input type="checkbox" name="h1" id="h1" value="h1">
+      <label for="h1"> 08:00 - 10:00</label>
+
+      <br>
+
+      <input type="checkbox" name="h2" id="h2" value="h2">
+      <label for="h1"> 12:00 - 14:00</label>
+
+      <br>
+
+      <input type="checkbox" name="h3" id="h3" value="h3">
+      <label for="h1"> 16:00 - 18:00</label>
+
+      <br>
+
+      <input type="checkbox" name="h4" id="h4" value="h4">
+      <label for="h1"> 19:00 - 21:00</label>
+
+      <br>
+
+
+
+    </form>
+  </main>
+
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select</title>
+</head>
+
+<body>
+
+  <form action="#">
+    <label for="nome">Nome: </label>
+    <input type="text" id="nome" nome="nome">
+
+    <br> <br>
+
+    <label for="email">E-mail: </label>
+    <input type="email" nome="email" id="email">
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+    <br><br>
+
+    <!-- a tag select abre uma lista já pré-definida para o usuário escrever. -->
+
+    <label for="listaUnidade">Lista de Unidades (com disabled selected hidden) </label>
+
+    <br>
+
+    <select name="listaUnidade" id="listaUnidade">
+      <!-- option dentro da tag select. 
+
+      s 
+          op
+          op
+          op
+      /s-->
+
+
+      <!-- para deixar a mensagem para o usuário mas ele não é capaz de selecionar. (usar disabled selected hidden)
+      
+      a tag disabled é usada para desabilitar elementos ou partes de um formulário, indicando que eles não estão disponíveis para interação no momento.
+    
+      a tag selected deixa uma opção automáticamente selecionada.
+  
+      a tag hidden esconde a opção do usuário. -->
+      <option value="unidades" disabled selected hidden>Unidades</option>
+
+      <option value="santana">Santana</option>
+      <option value="santo_amaro">Santo Amaro</option>
+      <option value="itaquera">Itaquera</option>
+      <option value="diadema">Diadema</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar">
+    <br><br>
+
+
+
+    <label for="listaUnidade">Lista de Unidades (sem value) </label>
+    <br>
+    <select name="listaUnidade" id="listaUnidade">
+      <!-- para deixar a mensagem para o usuário mas ele é capaz de selecionar. (tirar o value) -->
+      <option value="">Unidades</option>
+
+      <option value="santana">Santana</option>
+      <option value="santo_amaro">Santo Amaro</option>
+      <option value="itaquera">Itaquera</option>
+      <option value="diadema">Diadema</option>
+    </select>
+    <br><br>
+    <input type="submit" value="Enviar">
+    <br><br>
+
+
+
+    <label for="listaUnidade">Lista de Unidades (usando selected) </label>
+    <br>
+    <select name="listaUnidade" id="listaUnidade">
+      <!-- para deixar a mensagem selecionada para o usuário e ele consegue selecionar. (usar selected) -->
+      <option value="unidades" selected>Unidades</option>
+
+      <option value="santana">Santana</option>
+      <option value="santo_amaro">Santo Amaro</option>
+      <option value="itaquera">Itaquera</option>
+      <option value="diadema">Diadema</option>
+    </select>
+    <br><br>
+      <input type="submit" value="Enviar">
+
+
+
+  </form>
+
+
+
+</body>
+
+</html>

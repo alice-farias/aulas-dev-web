@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Continuação de Formulário</title>
+</head>
+
+<body>
+
+  <h1>Formulário</h1>
+
+  <form action="#">
+
+    <!-- fieldset adiciona uma borda para delimitar áreas do formulário -->
+    <fieldset>
+      <!-- legend adiciona uma legenda na borda que delimita as áres do formulário -->
+      <legend> Dados pessoais</legend>
+      <label for="nome">Nome: </label>
+      <input type="text" id="nome" name="nome" required>
+
+
+      <label for="email">E-mail: </label>
+      <input type="email" id="email" name="email" required>
+
+      <br><br>
+
+
+      <label for="numero">CEP: &nbsp;</label>
+      <input type="text" id="numero" name="numero" placeholder="Ex.: 12345-678" required>
+
+      <label for="senha">Crie sua senha:</label>
+      <input type="password" id="senha" name="senha" required>
+
+    </fieldset>
+    <br>
+    <fieldset>
+      <legend>Escolha de acordo com sua posssibilidade</legend>
+
+      <label for="unidades">Selecione sua unidade</label>
+      <select name="unidade" id="unidades">
+        <option value="" hidden>Unidades</option>
+        <option value="u1">Unidade Um</option>
+        <option value="u2">Unidade Dois</option>
+        <option value="u3">Unidade três</option>
+        <option value="u4">Unidade quatro</option>
+      </select>
+
+      <br><br><br>
+
+      <label for="hora">Selecione o horário de sua preferência</label>
+      <br>
+      <input type="radio" name="hora" id="8am">
+      <label for="">08:00 - 10:00</label>
+      <br>
+      <input type="radio" name="hora" id="12pm">
+      <label for="">12:00 - 14:00</label>
+      <br>
+      <input type="radio" name="hora" id="16am">
+      <label for="">16:00 - 20:00</label>
+      <br>
+
+
+    </fieldset>
+
+
+    <br><br>
+
+    <!-- área de texto -->
+
+    <!-- placeholder deixa uma mensagem para o usuário dentro da caixa;
+    colunas = cols;
+    rows =  linhas;
+    maxlenght delimita a quantidade de caracteres que pode ser digitado; -->
+
+    <fieldset>
+      <legend>Sua opinião é importante para nós</legend>
+      <textarea name="opinionUser" id="opinionUser" cols="90" rows="10" placeholder="Digite seu comentário aqui:"
+        maxlength="10"></textarea>
+    </fieldset>
+
+    <br><br>
+
+    <input type="submit" value="Enviar">
+
+
+
+
+  </form>
+</body>
+
+</html>
